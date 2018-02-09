@@ -1,53 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+        <html>
+                <head>
+                <meta name="viewport" content="width=100%, initial-scale=1">
+                <style>
+                body {
+                  margin: 0;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+                
+                .top-container {
+                  background-color: #f1f1f1;
+                  padding: 30px;
+                  text-align: center;
+                }
+                
+                .header {
+                  padding: 4px 110px;
+                  background: rgb(61, 58, 58);
+                  color: #f1f1f1;
+                }
+                
+                .content {
+                  padding: 16px;
+                }
+                
+                .sticky {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                }
+                
+                .sticky + .content {
+                  padding-top: 102px;
+                }
+
+                .headings {
+                        display: flex;
+                        justify-content: space-around;
+                        }
+                </style>
+                </head>
+                <body>
+                
+                <div class="header" id="myHeader">
+                  <h1>Rosie Nardulli</h1>
+
+                  <nav class="headings">
+                        <div><a href="">About Me</a></div>
+                        <div><a href="">Portfolio</a></div>
+                        <div><a href="">Let's Connect</a></div>
+                    </nav>
+    
+                </div>
+                
+                <div class="content">
+
+
+
 <style> 
-
+    p.a {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
   
-body {
-        background-image: url("/Users/rosienardulli/code/Basic-Portfolio/assets/images/greyfloral.png");
+    body {
+        background-image: url(./assets/images/grunge_wall.png);
         }
-
 </style>
-
-<body>
-        <font face="lucida">
-        <title>Rosie Nardulli</title>
-<center>
-<div><h1>Rosie Nardulli</h1>
-</div>
-
-<nav class="headers"></nav>
-    <div><a href="">About Me</a>
-    <a href="">Portfolio</a>
-    <a href="">Let's Connect</a></div>
 </head>
 
+<body>
+        <title>Rosie Nardulli</title>
+<center>
+<h1>
 <div>
-    <img src="./assets/images/rosie.jpg" width="440" height="300">
+        <p class="a">Rosie Nardulli</p>
+        
 </div>
-   <div>Rosie Nardulli yadda yadda yadda</div>
+</h1>
+
+<div>   <nav class="headers"></nav>
+         <div><p class="a"><a href="">About Me</a>
+         <a href="">Portfolio</a>
+        <a href="">Let's Connect</a></p>
+</div>
+
+<div>
+         <img src="./assets/images/rosie.jpg" width="440" height="300">
+</div>
+
+<div>
+         <p class="a">Rosie Nardulli yadda yadda yadda
+</div></p>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-   .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: rgb(61, 58, 58);
-      color: white;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
+     .footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: rgb(61, 58, 58);
+         color: white;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         text-align: center;
    }
 </style>
 </head>
 <body>
    
 <div class="footer">
-     <p>©Copyright 2018 Rosie Nardulli</p>
+         <p>©Copyright 2018 Rosie Nardulli</p>
 </div>
+
+
+
+                                  <script>
+                                         window.onscroll = function() {myFunction()};
+        
+                                           var header = document.getElementById("myHeader");
+                                         var sticky = header.offsetTop;
+        
+                                          function myFunction() {
+                                          if (window.pageYOffset >= sticky) {
+                                          header.classList.add("sticky");
+                                         } else {
+                                           header.classList.remove("sticky");
+                                           }
+                                      }
+                                     </script>
+        
+                                      </body>
+                                      </html>
    
 </font>
 </center>
