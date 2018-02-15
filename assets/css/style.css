@@ -6,7 +6,7 @@ p.a {
     background-image: url(./assets/images/grunge_wall.png);
   }  
 
-body {
+  body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -19,21 +19,21 @@ body {
   
   .content {
     padding: 16px;
+    padding-top: 102px;
   }
   
   .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
-  .sticky + .content {
     padding-top: 102px;
   }
 
   .headings {
     display: flex;
     justify-content: space-around;
+    color: white;
+    text-decoration: none;
   }
 
   .button {
@@ -64,7 +64,7 @@ body {
     align-items: center;
     padding: 4px 110px;;
     background: rgb(61, 58, 58);
-    color: #f1f1f1;
+    color: white;
     text-decoration: none;
   }
 
@@ -92,3 +92,20 @@ body {
     border: 1px solid #dddddd;
     box-sizing: border-box;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
