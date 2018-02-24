@@ -110,6 +110,7 @@ p.a {
     box-sizing: border-box;
     max-width: 270px;
     height: 170px;
+    float: right;
   }
 
 
@@ -118,9 +119,6 @@ p.a {
 
   }
 
-  image {
-    float: left;
-  }
 
 
 
